@@ -1,0 +1,53 @@
+{
+  "name": "sw-cli",
+  "version": "1.0.0",
+  "description": "splitwite command line",
+  "main": "",
+  "scripts": {
+    "clean": "rm -rf ./node_modules",
+    "clean-all": "yarn clean && yarn workspaces run clean",
+    "build": "tsc --build",
+    "run-all": "yarn clean && yarn && yarn build",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "knex": "^0.95.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express-session": "^1.17.0",
+    "@types/morgan": "^1.9.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.7.0",
+    "fork-ts-checker-webpack-plugin": "^5.2.0",
+    "github-current-user": "^2.5.0",
+    "glob": "^7.1.6",
+    "morgan": "^1.10.0",
+    "ts-loader": "^5.3.3",
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.2.3",
+    "webpack": "^4.44.1",
+    "webpack-node-externals": "^2.5.0"
+  },
+  "author": "Francia F. Riesco",
+  "license": "MIT",
+  "private": false
+}

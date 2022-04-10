@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["esnext", "DOM"],
+    "module": "commonjs",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "useUnknownInCatchVariables": false,
+    "noImplicitAny": false
+  },
+  "files": [],
+  "exclude": ["node_modules", "dist", "webpack.config.js"],
+  "paths": {
+    "@fr4nc3/sw-cli": ["packages/sw-cli"]
+  },
+  "references": [
+    { "path": "packages/sw-cli" }
+  ]
+}
