@@ -18,7 +18,10 @@
     "dotenv": "^8.2.0",
     "knex": "^0.95.2",
     "lodash": "^4.17.20",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "splitwise": "^1.0.0",
+    "p-queue": "^6.2.0",
+    "p-retry": "^4.2.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
